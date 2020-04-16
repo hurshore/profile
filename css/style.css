@@ -1,0 +1,242 @@
+/* Scroll behavious and scroll bar */
+* {
+   scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+}
+ 
+ /* Track */
+::-webkit-scrollbar-track {
+   background: #f1f1f1; 
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: #888; 
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #555; 
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+   width: 70px;
+}
+
+.intro {
+   width: 100%;
+   height: 100vh;
+   background: url('../images/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg');
+   background-color: #fafafa;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+}
+
+.intro .container {
+   width: 970px;
+   text-align: center;
+}
+
+.intro-text h1 {
+   font-size: 60px;
+   letter-spacing: 1px;
+   margin-bottom: 10px;
+   font-weight: 700;
+}
+
+.intro-text p {
+   font-size: 20px;
+   margin: 35px 0 50px 0;
+   color: #fcfcfc;
+}
+
+.intro-text a {
+   color: #fafafa;
+   padding: 15px 25px;
+   border: 1px solid #fff;
+   text-decoration: none;
+}
+
+.intro-text a:hover {
+   color: #fff;
+   background-color: #121d1f;
+   border-color: #121d1f
+}
+
+nav {
+   height: 70px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #f6f6f6;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+
+nav a {
+   margin: 0 80px;
+   text-decoration: none;
+   color: #777;
+}
+
+.nav-links {
+   display: flex;
+   justify-content: space-between;
+}
+
+/* About Section */
+#about {
+   margin-top: 100px;
+   display: flex;
+   justify-content: center;
+}
+
+#about h2 {
+   font-weight: 400;
+   color: #555;
+   font-size: 30px;
+   text-align: center;
+}
+
+#about .container {
+   width: 100%;
+   padding: 0 100px;
+}
+
+.image {
+   margin: 70px auto 0 auto;
+   position: relative;
+   width: 160px;
+   height: 160px;
+   overflow: hidden;
+   border-radius: 50%;
+}
+ 
+.image img {
+   width: 100%;
+   height: auto;
+   margin-top: -40px;
+}
+
+.bio-data { 
+   margin-top: 100px;
+   padding: 0 50px;
+}
+
+.bio-data h3 {
+   text-align: center;
+   color: #777;
+   font-weight: 400;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+th,td {
+   padding: 8px;
+   text-align: left;
+}
+
+tr:nth-child(odd) {background-color: #f2f2f2;}
+
+.summary {
+   margin-top: 60px;
+}
+
+.summary-text {
+   padding: 0 100px;
+   text-align: center
+}
+
+.summary-text p {
+   color: #777;
+}
+
+/* Contact Section */
+#contact {
+   margin: 50px 0 90px 0;
+}
+
+.section-title {
+   text-align: center;
+   margin-bottom: 80px;
+}
+
+.section-title h2 {
+   font-weight: 400;
+   color: #555;
+   font-size: 30px;
+}
+
+.contact-form {
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   padding: 0 200px;
+}
+
+.contact-form .row {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+.contact-form .row div {
+   width: 48%;
+}
+
+.contact-form .row input {
+   width: 100%;
+   padding: 6px 12px;
+   font-size: 14px;
+   box-sizing: border-box;
+}
+
+.message {
+   width: 100%;
+   display: flex;
+   margin-bottom: 30px;
+}
+
+textarea {
+   resize: none;
+   width: 100%;
+}
+
+.contact-form a {
+   margin-top: 20px;
+   color: #2c3e50;
+   border: 1px solid #999;
+   padding: 15px 25px;
+   text-decoration: none;
+}
+
+.contact-form a:hover {
+   color: #fff;
+   background-color: #121d1f;
+   border-color: #121d1f;
+}
+
+footer {
+   width: 100%;
+   height: 100px;
+   background-color: #f6f6f6;
+}
